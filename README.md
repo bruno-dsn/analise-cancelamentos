@@ -34,7 +34,7 @@ Projeto de análise de dados feito em Python para descobrir por que os clientes 
 ```
  projeto/
 ├──  cancelamentos.csv                    # Base de dados
-├──  analise_cancelamentos_simples.ipynb  # Análise completa
+├──  analise_cancelamentos.ipynb          # Análise completa
 └──  README.md                            # Este arquivo
 ```
 
