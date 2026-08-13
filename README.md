@@ -138,4 +138,4 @@ Este é um projeto de portfólio com dados sintéticos. As probabilidades não f
 
 ## Autor
 
-Bruno Nunes, estudante de Ciência de Dados e Inteligência Artificial.
+Bruno Nunes, Ciência de Dados e Inteligência Artificial.
