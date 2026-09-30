@@ -1,0 +1,60 @@
+{
+  "dataset": "clientes_assinatura_sinteticos.csv",
+  "sha256": "9290b283d4794cb15200addc5bc5f95e554dc3534d631c0816c63d371491bc8c",
+  "data_kind": "synthetic",
+  "seed": 42,
+  "threshold": 0.2,
+  "train_rows": 9000,
+  "test_rows": 3000,
+  "test_positive_rate": 0.11333333333333333,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1"
+  },
+  "results": {
+    "prior_baseline": {
+      "metrics": {
+        "acuracia": 0.8866666666666667,
+        "precisao": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5,
+        "average_precision": 0.11333333333333333,
+        "brier": 0.10048890123456788
+      },
+      "confusion_matrix": [
+        [
+          2660,
+          0
+        ],
+        [
+          340,
+          0
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "metrics": {
+        "acuracia": 0.832,
+        "precisao": 0.3392156862745098,
+        "recall": 0.5088235294117647,
+        "f1": 0.40705882352941175,
+        "roc_auc": 0.7879599734630693,
+        "average_precision": 0.3649387590486138,
+        "brier": 0.08604083539089512
+      },
+      "confusion_matrix": [
+        [
+          2323,
+          337
+        ],
+        [
+          167,
+          173
+        ]
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
+    average_precision_score,
     brier_score_loss,
     confusion_matrix,
     f1_score,
@@ -70,6 +71,7 @@ def calcular_metricas(
         "recall": recall_score(y_real, previsoes, zero_division=0),
         "f1": f1_score(y_real, previsoes, zero_division=0),
         "roc_auc": roc_auc_score(y_real, probabilidades),
+        "average_precision": average_precision_score(y_real, probabilidades),
         "brier": brier_score_loss(y_real, probabilidades),
     }
     matriz = confusion_matrix(y_real, previsoes, labels=[0, 1]).tolist()

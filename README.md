@@ -1,3 +1,5 @@
+[![Python checks](https://github.com/bruno-dsn/analise-cancelamentos/actions/workflows/tests.yml/badge.svg)](https://github.com/bruno-dsn/analise-cancelamentos/actions/workflows/tests.yml)
+
 # Laboratório de Retenção de Clientes
 
 [![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
@@ -139,3 +141,13 @@ Este é um projeto de portfólio com dados sintéticos. As probabilidades não f
 ## Autor
 
 Bruno Nunes, Ciência de Dados e Inteligência Artificial.
+
+
+## Verificação automatizada
+
+O workflow [Python checks](.github/workflows/tests.yml) instala as dependências de desenvolvimento e executa a suíte de testes em Python 3.12 a cada push ou pull request. O badge acima mostra o resultado real da execução, sem um número fixo de testes.
+
+
+## Comparação com uma referência simples
+
+Execute `python evaluate.py` para comparar a regressão logística com um classificador que prevê a prevalência do treino. Consulte o [relatório de avaliação](reports/evaluation.md) e o [JSON reproduzível](reports/evaluation.json), com average precision, métricas de limiar, matriz de confusão e identificação dos dados. A avaliação é separada dos scores de demonstração do aplicativo.
